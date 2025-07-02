@@ -177,59 +177,7 @@ const App = () => {
         </div>
       </section>
 
-      {/* Trust Section */}
-      <section id="trust" data-animate className={`py-20 px-4 bg-slate-800/30 ${isVisible['trust'] ? 'animate-fade-in' : 'opacity-0'}`}>
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <h2 className="text-4xl lg:text-5xl font-bold text-white">
-                Trusted by Prudent <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">Families</span>
-              </h2>
-              <p className="text-xl text-slate-300 leading-relaxed">
-                Our partnership with independent financial advisors ensures you get unbiased, expert advice 
-                tailored to your family's specific needs and financial situation.
-              </p>
-              
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-3 h-3 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-white mb-2">Independent Expertise</h4>
-                    <p className="text-slate-300">No conflicts of interest - pure advice focused on your success</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="w-3 h-3 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-white mb-2">Personalized Approach</h4>
-                    <p className="text-slate-300">Solutions tailored to your timeline and financial goals</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="w-3 h-3 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-white mb-2">Ongoing Support</h4>
-                    <p className="text-slate-300">Continuous guidance as your needs evolve over time</p>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div className="grid gap-6">
-              <img 
-                src="https://images.unsplash.com/photo-1649768996403-455e21e6e4ec" 
-                alt="Professional financial advisor"
-                className="rounded-3xl shadow-2xl w-full h-64 object-cover transform hover:scale-105 transition-transform duration-500"
-              />
-              <img 
-                src="https://images.pexels.com/photos/7789849/pexels-photo-7789849.jpeg" 
-                alt="Financial planning documents"
-                className="rounded-3xl shadow-2xl w-full h-48 object-cover transform hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section with Form */}
       <section id="signup-form" className="py-20 px-4">
