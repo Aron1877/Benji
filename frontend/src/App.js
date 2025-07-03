@@ -10,6 +10,7 @@ const App = () => {
     postalCode: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isVisible, setIsVisible] = useState({});
 
   useEffect(() => {
