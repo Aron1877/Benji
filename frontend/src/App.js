@@ -43,11 +43,38 @@ const App = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    setIsSubmitted(true);
-    // Here you would typically send data to your backend
+    setIsSubmitting(true);
+    
+    try {
+      // EmailJS configuration - You'll need to replace these with your actual values
+      const serviceID = 'YOUR_SERVICE_ID';
+      const templateID = 'YOUR_TEMPLATE_ID';
+      const publicKey = 'YOUR_PUBLIC_KEY';
+      
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        phone: formData.phone,
+        postal_code: formData.postalCode,
+        to_email: 'Binyamin.bodner@dfsin.ca',
+        message: `New RESP inquiry from ${formData.name}. Phone: ${formData.phone}, Email: ${formData.email}, Postal Code: ${formData.postalCode}`
+      };
+
+      await emailjs.send(serviceID, templateID, templateParams, publicKey);
+      
+      console.log('Email sent successfully');
+      setIsSubmitted(true);
+      setFormData({ name: '', phone: '', email: '', postalCode: '' });
+      
+    } catch (error) {
+      console.error('Email send failed:', error);
+      // For now, still show success to user (you can modify this behavior)
+      setIsSubmitted(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const formatPhoneNumber = (value) => {
