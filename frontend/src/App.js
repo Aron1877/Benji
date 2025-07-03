@@ -135,16 +135,16 @@ const App = () => {
           <div className="relative animate-float">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500 animate-fade-in">
               <img 
-                src="https://images.pexels.com/photos/5240511/pexels-photo-5240511.jpeg" 
-                alt="Father and son walking together towards a bright future"
+                src="https://images.pexels.com/photos/1456951/pexels-photo-1456951.jpeg" 
+                alt="Father and son enjoying time together outdoors, planning for the future"
                 className="w-full h-96 lg:h-[500px] object-cover animate-subtle-zoom"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent animate-pulse-glow"></div>
             </div>
-            {/* Floating Elements with Enhanced Animations */}
-            <div className="absolute -top-6 -right-6 w-32 h-32 bg-gradient-to-r from-orange-400 to-amber-500 rounded-full opacity-80 blur-xl animate-pulse-float delay-500"></div>
-            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-gradient-to-r from-amber-400 to-orange-300 rounded-full opacity-60 blur-lg animate-bounce-slow delay-1000"></div>
-            <div className="absolute top-1/4 -right-4 w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full opacity-40 blur-md animate-float-reverse delay-2000"></div>
+            {/* Enhanced Floating Elements with Scroll Animations */}
+            <div className="absolute -top-6 -right-6 w-32 h-32 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full opacity-80 blur-xl animate-pulse-float delay-500 scroll-trigger"></div>
+            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-gradient-to-r from-emerald-400 to-green-300 rounded-full opacity-60 blur-lg animate-bounce-slow delay-1000 scroll-trigger"></div>
+            <div className="absolute top-1/4 -right-4 w-16 h-16 bg-gradient-to-r from-lime-400 to-green-400 rounded-full opacity-40 blur-md animate-float-reverse delay-2000 scroll-trigger"></div>
           </div>
         </div>
       </section>
