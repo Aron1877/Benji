@@ -150,52 +150,52 @@ const App = () => {
       </section>
 
       {/* Value Proposition Section */}
-      <section id="value-prop" data-animate className={`py-20 px-4 scroll-animate ${isVisible['value-prop'] ? 'animate-fade-in-up' : 'opacity-0 translate-y-10'}`}>
+      <section id="value-prop" data-animate className={`py-20 px-4 ${isVisible['value-prop'] ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 scroll-stagger">
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 animate-title-reveal">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               Why Choose The RESP Guy?
             </h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto animate-subtitle-reveal">
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
               At The RESP guy, we partner with independent financial advisors to offer you the best the financial industry can provide.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 scroll-stagger-children">
+          <div className="grid md:grid-cols-3 gap-8">
             {/* Feature 1 */}
-            <div className="group bg-slate-800/50 backdrop-blur-xl border border-slate-700/50 p-8 rounded-3xl hover:bg-slate-700/50 transition-all duration-300 hover:transform hover:scale-105 scroll-card animate-slide-left">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 animate-icon-bounce">
+            <div className="group bg-slate-800/50 backdrop-blur-xl border border-slate-700/50 p-8 rounded-3xl hover:bg-slate-700/50 transition-all duration-300 hover:transform hover:scale-105 smooth-card">
+              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4 animate-text-glow">Expert Guidance</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">Expert Guidance</h3>
               <p className="text-slate-300 leading-relaxed">
                 Work with independent financial advisors who understand your unique situation and goals for your child's education.
               </p>
             </div>
 
             {/* Feature 2 */}
-            <div className="group bg-slate-800/50 backdrop-blur-xl border border-slate-700/50 p-8 rounded-3xl hover:bg-slate-700/50 transition-all duration-300 hover:transform hover:scale-105 scroll-card animate-slide-up-delayed">
-              <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 animate-icon-bounce-delayed">
+            <div className="group bg-slate-800/50 backdrop-blur-xl border border-slate-700/50 p-8 rounded-3xl hover:bg-slate-700/50 transition-all duration-300 hover:transform hover:scale-105 smooth-card">
+              <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4 animate-text-glow-delayed">Better Options</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">Better Options</h3>
               <p className="text-slate-300 leading-relaxed">
                 Compare and find superior RESP options that maximize your investment potential and government benefits.
               </p>
             </div>
 
             {/* Feature 3 */}
-            <div className="group bg-slate-800/50 backdrop-blur-xl border border-slate-700/50 p-8 rounded-3xl hover:bg-slate-700/50 transition-all duration-300 hover:transform hover:scale-105 scroll-card animate-slide-right">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 animate-icon-bounce-late">
+            <div className="group bg-slate-800/50 backdrop-blur-xl border border-slate-700/50 p-8 rounded-3xl hover:bg-slate-700/50 transition-all duration-300 hover:transform hover:scale-105 smooth-card">
+              <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4 animate-text-glow-late">Complete Evaluation</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">Complete Evaluation</h3>
               <p className="text-slate-300 leading-relaxed">
                 Get a thorough assessment of your current RESP to ensure it's working optimally for your family's future.
               </p>
