@@ -112,7 +112,160 @@
   animation: pulse-glow 3s ease-in-out infinite;
 }
 
-/* Background Pattern */
+/* Enhanced Scroll-Triggered Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes titleReveal {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes iconBounce {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(-2deg);
+  }
+  75% {
+    transform: translateY(-3px) rotate(2deg);
+  }
+}
+
+@keyframes textGlow {
+  0%, 100% {
+    text-shadow: 0 0 5px rgba(6, 182, 212, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(6, 182, 212, 0.6), 0 0 30px rgba(6, 182, 212, 0.4);
+  }
+}
+
+@keyframes cardHover {
+  from {
+    transform: translateY(0px) scale(1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Animation Classes */
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-slide-left {
+  animation: slideLeft 0.8s ease-out;
+}
+
+.animate-slide-right {
+  animation: slideRight 0.8s ease-out;
+}
+
+.animate-slide-up-delayed {
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.animate-title-reveal {
+  animation: titleReveal 1s ease-out 0.3s both;
+}
+
+.animate-subtitle-reveal {
+  animation: fadeInUp 0.8s ease-out 0.5s both;
+}
+
+.animate-icon-bounce {
+  animation: iconBounce 2s ease-in-out infinite;
+}
+
+.animate-icon-bounce-delayed {
+  animation: iconBounce 2s ease-in-out infinite 0.3s;
+}
+
+.animate-icon-bounce-late {
+  animation: iconBounce 2s ease-in-out infinite 0.6s;
+}
+
+.animate-text-glow {
+  animation: textGlow 3s ease-in-out infinite;
+}
+
+.animate-text-glow-delayed {
+  animation: textGlow 3s ease-in-out infinite 0.5s;
+}
+
+.animate-text-glow-late {
+  animation: textGlow 3s ease-in-out infinite 1s;
+}
+
+/* Scroll-triggered classes */
+.scroll-animate {
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-card {
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-card:hover {
+  animation: cardHover 0.3s ease-out forwards;
+}
+
+.scroll-stagger > * {
+  transition-delay: 0.1s;
+}
+
+.scroll-stagger-children > *:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.scroll-stagger-children > *:nth-child(2) {
+  transition-delay: 0.3s;
+}
+
+.scroll-stagger-children > *:nth-child(3) {
+  transition-delay: 0.5s;
+}
 .bg-grid-pattern {
   background-image: 
     linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
