@@ -112,159 +112,84 @@
   animation: pulse-glow 3s ease-in-out infinite;
 }
 
-/* Enhanced Scroll-Triggered Animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(60px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Optimized Smooth Animations */
+.smooth-card {
+  will-change: transform;
+  transform: translateZ(0); /* Force hardware acceleration */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@keyframes slideLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.smooth-card:hover {
+  transform: translateY(-4px) scale(1.02) translateZ(0);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-@keyframes slideRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes titleReveal {
-  from {
-    opacity: 0;
-    transform: translateY(30px) scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes iconBounce {
+/* Simplified float animation - more performance friendly */
+@keyframes smoothFloat {
   0%, 100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  25% {
-    transform: translateY(-5px) rotate(-2deg);
-  }
-  75% {
-    transform: translateY(-3px) rotate(2deg);
-  }
-}
-
-@keyframes textGlow {
-  0%, 100% {
-    text-shadow: 0 0 5px rgba(6, 182, 212, 0.3);
+    transform: translateY(0px) translateZ(0);
   }
   50% {
-    text-shadow: 0 0 20px rgba(6, 182, 212, 0.6), 0 0 30px rgba(6, 182, 212, 0.4);
+    transform: translateY(-8px) translateZ(0);
   }
 }
 
-@keyframes cardHover {
-  from {
-    transform: translateY(0px) scale(1);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+.animate-float {
+  animation: smoothFloat 4s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Simplified pulse animation */
+@keyframes smoothPulse {
+  0%, 100% {
+    opacity: 0.7;
+    transform: scale(1) translateZ(0);
   }
-  to {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  50% {
+    opacity: 1;
+    transform: scale(1.05) translateZ(0);
   }
 }
 
-/* Animation Classes */
-.animate-fade-in-up {
-  animation: fadeInUp 0.8s ease-out;
+.animate-pulse-float {
+  animation: smoothPulse 3s ease-in-out infinite;
+  will-change: transform, opacity;
 }
 
-.animate-slide-left {
-  animation: slideLeft 0.8s ease-out;
+/* Performance optimized bounce */
+@keyframes optimizedBounce {
+  0%, 100% {
+    transform: translateY(0px) translateZ(0);
+  }
+  50% {
+    transform: translateY(-12px) translateZ(0);
+  }
 }
 
-.animate-slide-right {
-  animation: slideRight 0.8s ease-out;
+.animate-bounce-slow {
+  animation: optimizedBounce 4s ease-in-out infinite;
+  will-change: transform;
 }
 
-.animate-slide-up-delayed {
-  animation: fadeInUp 0.8s ease-out 0.2s both;
+/* Simplified subtle zoom */
+@keyframes performantZoom {
+  0%, 100% {
+    transform: scale(1) translateZ(0);
+  }
+  50% {
+    transform: scale(1.01) translateZ(0);
+  }
 }
 
-.animate-title-reveal {
-  animation: titleReveal 1s ease-out 0.3s both;
+.animate-subtle-zoom {
+  animation: performantZoom 8s ease-in-out infinite;
+  will-change: transform;
 }
 
-.animate-subtitle-reveal {
-  animation: fadeInUp 0.8s ease-out 0.5s both;
-}
-
-.animate-icon-bounce {
-  animation: iconBounce 2s ease-in-out infinite;
-}
-
-.animate-icon-bounce-delayed {
-  animation: iconBounce 2s ease-in-out infinite 0.3s;
-}
-
-.animate-icon-bounce-late {
-  animation: iconBounce 2s ease-in-out infinite 0.6s;
-}
-
-.animate-text-glow {
-  animation: textGlow 3s ease-in-out infinite;
-}
-
-.animate-text-glow-delayed {
-  animation: textGlow 3s ease-in-out infinite 0.5s;
-}
-
-.animate-text-glow-late {
-  animation: textGlow 3s ease-in-out infinite 1s;
-}
-
-/* Background Pattern */
-.scroll-animate {
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.scroll-card {
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.scroll-card:hover {
-  animation: cardHover 0.3s ease-out forwards;
-}
-
-.scroll-stagger > * {
-  transition-delay: 0.1s;
-}
-
-.scroll-stagger-children > *:nth-child(1) {
-  transition-delay: 0.1s;
-}
-
-.scroll-stagger-children > *:nth-child(2) {
-  transition-delay: 0.3s;
-}
-
-.scroll-stagger-children > *:nth-child(3) {
-  transition-delay: 0.5s;
+/* Remove heavy animations that cause lag */
+.animate-float-reverse {
+  animation: smoothFloat 6s ease-in-out infinite reverse;
+  will-change: transform;
 }
 .bg-grid-pattern {
   background-image: 
