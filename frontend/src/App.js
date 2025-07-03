@@ -50,7 +50,7 @@ const App = () => {
     try {
       // EmailJS configuration
       const serviceID = 'service_59eqc92';
-      const templateID = 'qmLlYHNoyqp6lHbvDu3Xf';
+      const templateID = 'template_qcxo7bh';
       const publicKey = 'cqo_-p2qVXfcNn2PI';
       
       const templateParams = {
