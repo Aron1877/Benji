@@ -129,9 +129,6 @@ const App = () => {
                 Get Started Today
                 <span className="ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
               </button>
-              <button className="border-2 border-blue-400 text-blue-400 px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-blue-400 hover:text-slate-900 transition-all duration-300">
-                Learn More
-              </button>
             </div>
           </div>
 
