@@ -288,6 +288,20 @@ const App = () => {
         <div className="max-w-6xl mx-auto text-center">
           <h3 className="text-2xl font-bold text-white mb-4">The RESP Guy</h3>
           <p className="text-slate-400 mb-6">The RESP option for the prudent</p>
+          
+          {/* Contact Email */}
+          <div className="mb-6">
+            <a 
+              href="mailto:Binyamin.bodner@dfsin.ca" 
+              className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors duration-300 text-lg font-medium"
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              Binyamin.bodner@dfsin.ca
+            </a>
+          </div>
+          
           <div className="flex justify-center space-x-8 text-slate-400">
             <a href="#" className="hover:text-cyan-400 transition-colors duration-300">Privacy Policy</a>
             <a href="#" className="hover:text-cyan-400 transition-colors duration-300">Terms of Service</a>
