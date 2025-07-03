@@ -197,9 +197,6 @@ const App = () => {
               <p className="text-xl text-slate-300 max-w-2xl mx-auto">
                 To hear more about RESPs and how we can help optimize your education savings strategy, sign up below.
               </p>
-              <p className="text-slate-400 mt-4">
-                Or reach out directly at <a href="mailto:Binyamin.bodner@dfsin.ca" className="text-cyan-400 hover:text-cyan-300 transition-colors duration-300 font-medium">Binyamin.bodner@dfsin.ca</a>
-              </p>
             </div>
 
             {!isSubmitted ? (
