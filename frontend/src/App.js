@@ -48,10 +48,10 @@ const App = () => {
     setIsSubmitting(true);
     
     try {
-      // EmailJS configuration - You'll need to replace these with your actual values
-      const serviceID = 'YOUR_SERVICE_ID';
-      const templateID = 'YOUR_TEMPLATE_ID';
-      const publicKey = 'YOUR_PUBLIC_KEY';
+      // EmailJS configuration
+      const serviceID = 'service_59eqc92';
+      const templateID = 'qmLlYHNoyqp6lHbvDu3Xf';
+      const publicKey = 'cqo_-p2qVXfcNn2PI';
       
       const templateParams = {
         from_name: formData.name,
