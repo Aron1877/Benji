@@ -207,21 +207,21 @@ const App = () => {
 
 
       {/* CTA Section with Form */}
-      <section id="signup-form" className="py-20 px-4">
+      <section id="signup-form" className="py-20 px-4 scroll-animate" data-animate>
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-slate-800/80 to-slate-700/80 backdrop-blur-xl border border-slate-600/50 rounded-3xl p-8 lg:p-12 shadow-2xl">
-            <div className="text-center mb-10">
-              <div className="w-24 h-24 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+          <div className={`bg-gradient-to-r from-slate-800/80 to-slate-700/80 backdrop-blur-xl border border-slate-600/50 rounded-3xl p-8 lg:p-12 shadow-2xl transform transition-all duration-1000 ${isVisible['signup-form'] ? 'animate-fade-in-up scale-100' : 'opacity-0 scale-95'}`}>
+            <div className="text-center mb-10 animate-stagger">
+              <div className="w-24 h-24 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full mx-auto mb-6 flex items-center justify-center animate-pulse-float">
                 <img 
                   src="https://images.unsplash.com/photo-1650064175560-369b5b45b649" 
                   alt="Education savings success"
-                  className="w-16 h-16 rounded-full object-cover"
+                  className="w-16 h-16 rounded-full object-cover animate-subtle-zoom"
                 />
               </div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4 animate-title-reveal">
                 Ready to Secure Your Child's Future?
               </h2>
-              <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+              <p className="text-xl text-slate-300 max-w-2xl mx-auto animate-subtitle-reveal">
                 To hear more about RESPs and how we can help optimize your education savings strategy, sign up below.
               </p>
             </div>
