@@ -330,6 +330,18 @@ const App = () => {
         <div className="max-w-6xl mx-auto text-center">
           <h3 className="text-2xl font-bold text-white mb-4">The RESP Guy</h3>
           <p className="text-slate-400 mb-6">The RESP option for the prudent</p>
+          
+          {/* Address */}
+          <div className="mb-6">
+            <div className="inline-flex items-center text-slate-300 mb-2">
+              <svg className="w-5 h-5 mr-2 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span className="text-lg">3410 Sheppard Ave E, Scarborough, ON M1T 3K4</span>
+            </div>
+          </div>
+          
           <div className="flex justify-center space-x-8 text-slate-400">
             <a href="#" className="hover:text-cyan-400 transition-colors duration-300">Privacy Policy</a>
             <a href="#" className="hover:text-cyan-400 transition-colors duration-300">Terms of Service</a>
