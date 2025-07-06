@@ -238,7 +238,7 @@ const App = () => {
             </div>
 
             {!isSubmitted ? (
-              <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl mx-auto">
+              <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl mx-auto mobile-form">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-slate-300 mb-2">Full Name</label>
@@ -248,7 +248,7 @@ const App = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-4 bg-slate-800/50 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all duration-300 mobile-tap-target"
                       placeholder="Enter your full name"
                     />
                   </div>
@@ -260,7 +260,7 @@ const App = () => {
                       value={formData.phone}
                       onChange={handlePhoneChange}
                       required
-                      className="w-full px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-4 bg-slate-800/50 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all duration-300 mobile-tap-target"
                       placeholder="(555) 123-4567"
                     />
                   </div>
@@ -275,7 +275,7 @@ const App = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-4 bg-slate-800/50 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all duration-300 mobile-tap-target"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -287,7 +287,7 @@ const App = () => {
                       value={formData.postalCode}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-4 bg-slate-800/50 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all duration-300 mobile-tap-target"
                       placeholder="A1A 1A1"
                     />
                   </div>
@@ -296,7 +296,7 @@ const App = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full py-4 px-8 rounded-xl font-semibold text-lg shadow-2xl transform transition-all duration-300 ${
+                  className={`w-full py-5 px-8 rounded-xl font-semibold text-lg shadow-2xl transform transition-all duration-300 mobile-tap-target touch-feedback ${
                     isSubmitting 
                       ? 'bg-slate-600 text-slate-300 cursor-not-allowed' 
                       : 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white hover:shadow-cyan-500/25 hover:scale-105 hover:from-cyan-500 hover:to-blue-500'
@@ -315,7 +315,7 @@ const App = () => {
                   )}
                 </button>
 
-                <p className="text-sm text-slate-400 text-center">
+                <p className="text-sm text-slate-400 text-center mobile-text">
                   We respect your privacy. Your information will only be used to contact you about RESP opportunities.
                 </p>
               </form>
