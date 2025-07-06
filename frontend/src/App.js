@@ -209,7 +209,7 @@ const App = () => {
       {/* CTA Section with Form */}
       <section id="signup-form" className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <div className={`bg-gradient-to-r from-slate-800/80 to-slate-700/80 backdrop-blur-xl border border-slate-600/50 rounded-3xl p-8 lg:p-12 shadow-2xl smooth-card ${isVisible['signup-form'] ? 'animate-fade-in' : 'opacity-0'}`}>
+          <div className="bg-gradient-to-r from-slate-800/80 to-slate-700/80 backdrop-blur-xl border border-slate-600/50 rounded-3xl p-8 lg:p-12 shadow-2xl smooth-card">
             <div className="text-center mb-10">
               <div className="w-24 h-24 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full mx-auto mb-6 flex items-center justify-center animate-pulse-float">
                 <img 
