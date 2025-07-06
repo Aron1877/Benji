@@ -100,8 +100,28 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
+      {/* Maintenance Banner */}
+      {isMaintenanceMode && (
+        <div className="bg-amber-600 text-white py-4 px-4 text-center relative z-50">
+          <div className="max-w-4xl mx-auto flex items-center justify-center">
+            <svg className="w-6 h-6 mr-3 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+            </svg>
+            <div>
+              <p className="font-semibold">We're currently updating our services to serve you better!</p>
+              <p className="text-sm mt-1">
+                We apologize for any inconvenience. Our RESP consultation services will be back online shortly. 
+                For urgent inquiries, please contact us directly at <span className="font-medium">Binyamin.bodner@dfsin.ca</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Main Content */}
+      <div className={isMaintenanceMode ? 'opacity-50 pointer-events-none' : ''}>
+        {/* Hero Section */}
+        <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-grid-pattern"></div>
