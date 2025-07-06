@@ -3,7 +3,9 @@ import emailjs from '@emailjs/browser';
 import "./App.css";
 
 const App = () => {
-  // Maintenance mode toggle - set to true when site is under maintenance
+  // MAINTENANCE MODE CONTROL
+  // Set to 'true' to show maintenance message and disable site
+  // Set to 'false' for normal operation
   const [isMaintenanceMode, setIsMaintenanceMode] = useState(false);
   
   const [formData, setFormData] = useState({
