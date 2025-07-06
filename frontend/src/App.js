@@ -434,8 +434,6 @@ const App = () => {
           
           <div className="flex justify-center space-x-8 text-slate-400">
             <a href="#" className="hover:text-cyan-400 transition-colors duration-300">Privacy Policy</a>
-            <a href="#" className="hover:text-cyan-400 transition-colors duration-300">Terms of Service</a>
-            <a href="#" className="hover:text-cyan-400 transition-colors duration-300">Contact Us</a>
           </div>
           <p className="text-slate-500 text-sm mt-6">
             © 2025 The RESP Guy. All rights reserved.
