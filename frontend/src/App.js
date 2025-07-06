@@ -121,14 +121,25 @@ const App = () => {
               or even evaluate what you currently have, The RESP guy is the right place to be.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col gap-4 pt-4">
               <button 
                 onClick={() => document.getElementById('signup-form').scrollIntoView({ behavior: 'smooth' })}
-                className="group bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-blue-500/25 transform hover:scale-105 transition-all duration-300 hover:from-blue-500 hover:to-cyan-500"
+                className="group bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-5 lg:py-4 rounded-2xl font-semibold text-lg lg:text-lg text-center shadow-2xl hover:shadow-blue-500/25 transform hover:scale-105 transition-all duration-300 hover:from-blue-500 hover:to-cyan-500 min-h-[60px] flex items-center justify-center"
               >
-                Get Started Today
+                <span className="text-lg lg:text-lg">Get Started Today</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
               </button>
+              
+              {/* Mobile-Optimized Call Button */}
+              <a 
+                href="tel:+14165551234" 
+                className="md:hidden bg-green-600 hover:bg-green-700 text-white px-8 py-5 rounded-2xl font-semibold text-lg text-center shadow-2xl transition-all duration-300 min-h-[60px] flex items-center justify-center"
+              >
+                <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                Call Now for Free Consultation
+              </a>
             </div>
           </div>
 
