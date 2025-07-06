@@ -103,6 +103,135 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
+      {/* Privacy Policy Modal */}
+      {showPrivacyPolicy && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl max-w-4xl max-h-[90vh] overflow-y-auto">
+            <div className="p-6 lg:p-8">
+              <div className="flex justify-between items-center mb-6">
+                <h2 className="text-3xl font-bold text-slate-900">Privacy Policy</h2>
+                <button 
+                  onClick={() => setShowPrivacyPolicy(false)}
+                  className="text-slate-500 hover:text-slate-700 text-2xl font-bold"
+                >
+                  ×
+                </button>
+              </div>
+              
+              <div className="text-slate-700 space-y-6 leading-relaxed">
+                <div>
+                  <p className="text-sm text-slate-500 mb-4">Effective Date: January 2025</p>
+                  <p className="mb-4">
+                    At The RESP Guy, we are committed to protecting your privacy and personal information. 
+                    This Privacy Policy explains how we collect, use, and safeguard your information when you 
+                    visit our website and use our services.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">Information We Collect</h3>
+                  <p className="mb-3">When you use our consultation form, we collect:</p>
+                  <ul className="list-disc list-inside space-y-2 ml-4">
+                    <li>Your full name</li>
+                    <li>Phone number</li>
+                    <li>Email address</li>
+                    <li>Postal code</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">How We Use Your Information</h3>
+                  <p className="mb-3">We use your personal information to:</p>
+                  <ul className="list-disc list-inside space-y-2 ml-4">
+                    <li>Contact you within 24 hours to schedule your free RESP consultation</li>
+                    <li>Provide personalized RESP advice and recommendations</li>
+                    <li>Send you relevant information about RESP options and government benefits</li>
+                    <li>Improve our services and website functionality</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">Information Sharing</h3>
+                  <p className="mb-3">
+                    We DO NOT sell, trade, or rent your personal information to third parties. 
+                    We may share your information with:
+                  </p>
+                  <ul className="list-disc list-inside space-y-2 ml-4">
+                    <li>Independent financial advisors within our network to provide you with expert RESP guidance</li>
+                    <li>Service providers who help us operate our website (such as email services)</li>
+                    <li>Legal authorities if required by law</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">Data Security</h3>
+                  <p>
+                    We implement appropriate security measures to protect your personal information against 
+                    unauthorized access, alteration, disclosure, or destruction. Our website uses SSL encryption 
+                    and secure email systems to protect your data during transmission.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">Your Rights</h3>
+                  <p className="mb-3">You have the right to:</p>
+                  <ul className="list-disc list-inside space-y-2 ml-4">
+                    <li>Request access to your personal information</li>
+                    <li>Request correction of any inaccurate information</li>
+                    <li>Request deletion of your personal information</li>
+                    <li>Opt-out of future communications</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">Cookies and Tracking</h3>
+                  <p>
+                    Our website may use cookies to improve your browsing experience and analyze website traffic. 
+                    You can control cookie settings through your browser preferences.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">Contact Information</h3>
+                  <p className="mb-3">
+                    If you have any questions about this Privacy Policy or wish to exercise your rights, 
+                    please contact us:
+                  </p>
+                  <div className="bg-slate-100 p-4 rounded-lg">
+                    <p><strong>Email:</strong> Binyamin.bodner@dfsin.ca</p>
+                    <p><strong>Address:</strong> 3410 Sheppard Ave E, Scarborough, ON M1T 3K4</p>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">Changes to This Policy</h3>
+                  <p>
+                    We may update this Privacy Policy from time to time. Any changes will be posted on this page 
+                    with an updated effective date. We encourage you to review this policy periodically.
+                  </p>
+                </div>
+
+                <div className="border-t pt-6">
+                  <p className="text-sm text-slate-500">
+                    This Privacy Policy complies with Canadian privacy laws including PIPEDA 
+                    (Personal Information Protection and Electronic Documents Act).
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-8 text-center">
+                <button 
+                  onClick={() => setShowPrivacyPolicy(false)}
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      
       {/* Maintenance Banner */}
       {isMaintenanceMode && (
         <div className="bg-amber-600 text-white py-4 px-4 text-center relative z-50">
