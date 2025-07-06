@@ -321,15 +321,67 @@ const App = () => {
               </form>
             ) : (
               <div className="text-center py-12">
-                <div className="w-20 h-20 bg-green-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <div className="w-20 h-20 bg-green-500 rounded-full mx-auto mb-6 flex items-center justify-center animate-pulse">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
                 <h3 className="text-3xl font-bold text-white mb-4">Thank You!</h3>
-                <p className="text-xl text-slate-300">
+                <p className="text-xl text-slate-300 mb-6">
                   We've received your information and will be in touch within 24 hours to discuss your RESP options.
                 </p>
+                
+                {/* What Happens Next */}
+                <div className="bg-slate-700/50 rounded-2xl p-6 mb-8 text-left max-w-md mx-auto">
+                  <h4 className="text-lg font-bold text-white mb-4 text-center">What Happens Next:</h4>
+                  <div className="space-y-3">
+                    <div className="flex items-start">
+                      <div className="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                        <span className="text-white font-bold text-sm">1</span>
+                      </div>
+                      <p className="text-slate-300">We'll call you within 24 hours to schedule your free consultation</p>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                        <span className="text-white font-bold text-sm">2</span>
+                      </div>
+                      <p className="text-slate-300">Review your current RESP situation (if applicable)</p>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                        <span className="text-white font-bold text-sm">3</span>
+                      </div>
+                      <p className="text-slate-300">Explore better options with our independent advisors</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Social Sharing */}
+                <div className="mb-6">
+                  <p className="text-slate-400 mb-4">Help other parents secure their child's future:</p>
+                  <div className="flex justify-center space-x-4">
+                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-300 flex items-center">
+                      <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                      </svg>
+                      Share
+                    </button>
+                    <button className="bg-blue-800 hover:bg-blue-900 text-white px-4 py-2 rounded-lg transition-colors duration-300 flex items-center">
+                      <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                      </svg>
+                      Share
+                    </button>
+                  </div>
+                </div>
+
+                {/* Contact Info */}
+                <div className="text-center text-slate-400">
+                  <p>Questions? Call us directly:</p>
+                  <a href="tel:+14165551234" className="text-cyan-400 hover:text-cyan-300 font-medium text-lg">
+                    (416) 555-1234
+                  </a>
+                </div>
               </div>
             )}
           </div>
