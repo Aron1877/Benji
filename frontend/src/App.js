@@ -7,6 +7,7 @@ const App = () => {
   // Set to 'true' to show maintenance message and disable site
   // Set to 'false' for normal operation
   const [isMaintenanceMode, setIsMaintenanceMode] = useState(false);
+  const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
   
   const [formData, setFormData] = useState({
     name: '',
