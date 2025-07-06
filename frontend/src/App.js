@@ -440,6 +440,7 @@ const App = () => {
           </p>
         </div>
       </footer>
+      </div>
     </div>
   );
 };
